@@ -15,7 +15,7 @@ local ref_insert = clonefunction(table.insert);
 local ref_date = clonefunction(os.date);
 local ref_tick = clonefunction(tick);
 
-identifyexecutor = getexecutorname or function()
+identifyexecutor = identifyexecutor or getexecutorname or function()
     return "Seli\0ware" , 1;
 end;
 
